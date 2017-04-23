@@ -4,7 +4,7 @@ $(function () {
     $('#from').val(object.from);
     $('#to').val(object.to);
     $('#price').val(object.price + ".00 EUR");
-    $('#date').val(object.depart + object.return);
+    $('#date').val(object.depart + (object.return ? " - " + object.return : ""));
 
     let user = JSON.parse(localStorage.getItem('loggedAs'));
 
