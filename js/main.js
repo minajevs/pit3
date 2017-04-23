@@ -6,7 +6,7 @@ $('.datepicker').datepicker({
 let carriers = [
     "lufthansa",
     "wizzair",
-    "airnaltic",
+    "airbaltic",
     "ryanair",
     "aeroflot"
 ]
@@ -46,7 +46,7 @@ $('#dosearch').on('click', () => {
                     <td>${res.from} - ${res.to}</td>
                     <td>${res.depart} ${res.return ? "- " + res.return : ""}</td>
                     <td>${res.price}€</td>
-                    <td><img src="/img/${res.carrier}.png" alt="${res.carrier}" height="25" width="100"></td>
+                    <td><img src="./img/${res.carrier}.png" alt="${res.carrier}" height="25" width="100"></td>
                     <td>${res.available}</td>
                 </tr>`
             resultBody.append(element);
