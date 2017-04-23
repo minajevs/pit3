@@ -17,9 +17,9 @@ $(function () {
 
 
     $('.finish').click(() => {
-        if (!$('#name').val() &&
-            !$('#surname').val() &&
-            !$('#email').val() &&
+        if (!$('#name').val() ||
+            !$('#surname').val() ||
+            !$('#email').val() ||
             !$('#number').val()) {
             alert('Lūdzu, ievadiet visus datus!')
             return;

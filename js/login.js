@@ -31,7 +31,7 @@ $(function () {
         let p2 = $('#register-password2').val();
         let ph = $('#register-phone').val();
 
-        if(!u && !e && !p && !p2 && !ph){
+        if(!u || !e || !p || !p2 || !ph){
             alert('Lūdzu, ievadiet visus datus!');
             return
         }
